@@ -103,7 +103,7 @@
 
 How to include CSS?
 
-* `<link rel="stylesheet" href="my.css">`. 
+* `<link rel="stylesheet" href="my.css">`
 
 Does the page load faster if `link` is in the `head` or on the bottom of the page?
 
