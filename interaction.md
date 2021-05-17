@@ -114,28 +114,30 @@ How to create a text input element with a default value?
 
 * `<input id="a" value="a">`
 
-Say you now write `b` into that input. How to get the input's value?
-
-* `document.getElementById("a").value` returns `b`.
-	* uses a document node property
-* `$("#a").val()`
-
-`document.getElementById("a").getAttribute("value")`?
+Say you now write `b` into that input. `document.getElementById("a").getAttribute("value")`?
 
 * `a`. The initial value is retuend (the same as when you inspect the HTML source code). Not the same thing as the current node property.
 
 `$("#a").attr("value")`?
 
-* `a`.
+* `a`
+
+`document.getElementById("a").value`? 
+
+* `b`. Node property
 
 `$("#a").prop("value")`?
 
-* `d`
-	* same as `$("#a").val()`
+* `b`
+
+`$("#a").val()`
+
+* `b`
 
 How to set an input's value using js?
 
 * `document.getElementById("a").value = "c"`
+* `$("#a").prop("value", "d")`
 * `$("#a").val("d")`
 
 How to create a text input element with suggested values?
@@ -158,7 +160,6 @@ How to see if a checkbox is checked using js?
 
 * `document.getElementById("b").checked`
 * `$("#b").prop("checked")`
-	* You can also use: `$("#b").is(":checked")`
 
 How to set a checkbox to be checked using js?
 
@@ -226,7 +227,7 @@ How to set a default option for radio buttons?
 
 How to get the value of a selected radio button using js?
 
-* This:
+* By using `getElementsByName`, like this:
 
 		function radioValueByName(name) {
 			var es = document.getElementsByName(name);

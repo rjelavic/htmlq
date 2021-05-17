@@ -195,7 +195,7 @@ Can you define arbitrary attributes?
 
 `<span title="a">b</span>`?
 
-* `b` is displayed but a tooltip with text `a` is displayed on mouseover.
+* A tooltip with text `a` is displayed on mouseover.
 
 What are HTML global attributes?
 

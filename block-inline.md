@@ -101,6 +101,10 @@
 
 # Block and Inline
 
+What can the `display` CSS property be?
+
+* `block`, `inline`, `inline-block`
+
 `a<div>b</div>c`?
 
 * This:
@@ -186,12 +190,6 @@
 
 * `abc`
 
-`a<button>b</button>c`?
-
-* `abc`
-* `display: inline-block;`
-* same as `a<input type="button" value="b">c`
-
 `a<hr>b`?
 
 * This:
@@ -206,6 +204,12 @@
 
 * `a☐b`
 * `display: inline-block;`
+
+`a<button>b</button>c`?
+
+* `abc`
+* `display: inline-block;`
+* same as `a<input type="button" value="b">c`
 
 `a<label>b</label>c`?
 
